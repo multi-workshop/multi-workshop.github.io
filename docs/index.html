@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MULTI Workshop</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ2NZ1XRQN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-DJ2NZ1XRQN');
+  </script>
+
+  <script type="application/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script type="application/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script type="application/javascript"
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      var current = window.location.href;
+      $('#nav li a').each(function () {
+        var $this = $(this);
+        if (current.indexOf($this.attr('href')) !== -1) {
+          $this.tab('show');
+        }
+      })
+    });
+  </script>
+
+  <style>
+    body {
+      color: black;
+      background-color: #F1ECE6;
+      font-family: Arial, Helvetica;
+    }
+
+    .container-fluid {
+      max-width: 55em;
+      min-width: 40em;
+      margin: auto;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: #FBF9F7;
+    }
+
+    a {
+      color: darkblue;
+    }
+
+    .header {
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+
+    .header img {
+      width: 100%;
+      min-width: 880px;
+    }
+
+    .header div {
+      position: absolute;
+      top: 0.5em;
+      left: 0em;
+      font-size: 19px;
+      color: #513C35;
+      text-align: left;
+    }
+
+    .header>div>p {
+      padding: 10px;
+      margin: 0px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .nav {
+      background-color: #F1ECE6;
+      flex-wrap: nowrap;
+      border-color: #513C35;
+    }
+
+    .nav-tabs .nav-link {
+      color: #513C35;
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+      color: #513C35;
+      background-color: #FBF9F7;
+      border-color: #513C35 #513C35 #FBF9F7;
+      margin-bottom: -1px;
+    }
+
+    .nav-item:hover {
+      background-color: #FBF9F7;
+    }
+
+    .nav-item>a {
+      font-weight: bold;
+    }
+
+    .tab-content {
+      border-left: thin solid #513C35;
+      border-right: thin solid #513C35;
+      border-bottom: thin solid #513C35;
+    }
+
+    .tab-pane {
+      padding-left: 2em;
+      padding-top: 2em;
+      padding-right: 2em;
+      margin-bottom: 4em;
+      text-align: justify;
+    }
+
+    .col-sm-4 {
+      padding: 1em;
+    }
+
+    .col-sm-4 img {
+      height: 250px;
+      border: thin solid black;
+      text-align: left;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .col-sm-4 p {
+      text-align: left;
+      padding: 0.33em;
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: .5rem;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #513C35;
+    }
+
+    h2 {
+      margin-top: 0em;
+      margin-bottom: 0.5em;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+
+    h4 {
+      padding-top: 10px;
+    }
+
+    img.impression {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+    }
+
+    small {
+      font-size: 16px;
+      padding-bottom: 6px;
+      color: #3399f3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="header">
+      <img src="img/stones.png" />
+      <div style="zoom:1.14">
+        <!-- <p style="font-size: 23px; line-height: 1.4; margin-bottom: -0.5em">
+          MULTI 2023 - 10th International Workshop on<br>
+          Multi-Level Modeling</p> -->
+        <!-- <p style="line-height: 1.4;">2 October 2023 at MODELS 2023<br>
+          Västerås, Sweden</p> -->
+        <p style="font-size: 23px; line-height: 1.4; margin-bottom: -0.5em">
+          MULTI - International Workshop on<br>
+          Multi-Level Modeling</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <ul class="nav nav-tabs" id="nav" style="padding-left: 0.5em">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#cfp">CfP</a>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#challenge">Challenges</a>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#dates">Dates</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#committees">Committees</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#past">Past</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://homepages.ecs.vuw.ac.nz/Groups/MultiLevelModeling/" target="_blank">Wiki</a>
+      </li>
+    </ul>
+
+    <div id="myTabContent" class="tab-content">
+
+      <div class="tab-pane fade active show" id="home">
+
+        <p>
+          The MULTI workshop series is the premier venue for researchers and practitioners working on multi-level modeling and multi-level software development. Multi-level modeling represents a new object-oriented paradigm for both conceptual modelling and software engineering. In contrast to conventional two-level approaches, it supports an unbounded number of classification levels and introduces concepts and mechanisms that foster reuse, adaptability, and control. While multi-level languages and tools have reached considerable maturity, the field still offers numerous challenges.
+        </p>
+
+        <p>
+          The MULTI workshop series aims at providing a platform for exchanging ideas and promoting further development of multi-level languages, methods, and tools. A particular goal is to encourage the community to, beyond proposing new approaches, analyse different approaches to multi-level modelling and define objective ways to evaluate their respective strengths and weaknesses. Non-exclusive workshop themes in 2023 will be multi-level modeling in education and understanding industry needs. </p>
+
+        <p>
+          The workshop is traditionally held as a satellite event of the <a href="https://conf.researchr.org/series/models">MODELS conference series</a>, with accepted papers published in the IEEE/ACM companion volume of the conference.
+        </p>
+
+      </div>
+
+
+      <!-- ------------------------------------------------------------------------------------ -->
+
+
+      <div class="tab-pane fade" id="committees">
+        <h2>Organizers 2024</h2>
+
+        <div class="card-deck">
+          <div class="card">
+            <img src="img/claudenir-fonseca.jpg" class="card-img-top" alt="Gergely" />
+            <div class="card-body">
+              <h5 class="card-title">Claudenir Fonseca</h5>
+              <p class="card-text text-left">University of Twente, Netherlands</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/fernando-macias.jpg" class="card-img-top" alt="Gergely" />
+            <div class="card-body">
+              <h5 class="card-title">Fernando Macías</h5>
+              <p class="card-text text-left">IMDEA Software Institute, Spain</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/gergely_mezei.jpg" class="card-img-top" alt="Gergely" />
+            <div class="card-body">
+              <h5 class="card-title">Gergely Mezei</h5>
+              <p class="card-text text-left">Budapest University of Technology and Economics, Hungary</p>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <h2>Program Committee 2024 (tentative)</h2>
+
+        <ul>
+          <li>Adrian Rutle, Western Norway University of Applied Sciences, Norway</li>
+          <li>Andreas Prinz, University of Agder, Norway</li>
+          <li>Bernd Neumayr, Johannes Kepler University Linz, Austria</li>
+          <li>Chris Partridge, BORO Solutions, University of Westminster, UK</li>
+          <li>Christoph G. Schuetz, Johannes Kepler University Linz, Austria</li>
+          <!-- <li>Claudenir Fonseca, University of Twente, Netherlands</li> -->
+          <li>Colin Atkinson, University of Mannheim, Germany</li>
+          <li>Ferenc Somogyi, Budapest University of Technology and Economics, Hungary</li>
+          <!-- <li>Fernando Macías, IMDEA Software Institute, Spain</li> -->
+          <li>Georg Grossmann, University of South Australia, Australia</li>
+          <!-- <li>Gergely Mezei, Budapest University of Technology and Economics, Hungary</li> -->
+          <li>Jens Gulden, Utrecht University, Netherlands</li>
+          <li>João Paulo A. Almeida, Federal University of Espírito Santo, Brazil</li>
+          <li>Juan de Lara, Universidád Autónoma de Madrid, Spain</li>
+          <li>Manuel Wimmer, Johannes Kepler University Linz, Austria</li>
+          <li>Marian Daun, University of Duisburg-Essen, Germany</li>
+          <li>Markus Stumptner, University of South Australia, Australia</li>
+          <li>Matt Selway, University of South Australia, Australia</li>
+          <li>Mira Balaban, Ben-Gurion University of the Negev, Israel</li>
+          <li>Monika Kaczmarek, University Duisburg Essen, Germany</li>
+          <li>Ulrich Frank, University of Duisburg-Essen, Germany</li>
+          <li>Victorio Albani Carvalho, Federal Institute of Espírito Santo, Brazil</li>
+          <li>Thomas Kühne, Victoria University of Wellington, New Zealand</li>
+          <li>Zoltán Theisz, Framatome, Hungary</li>
+          <li>Manfred Jeusfeld, University of Skövde, Sweden</li>
+          <!-- <li>Esther Guerra, Universidad Autónoma de Madrid, Spain</li> -->
+          <!-- <li>Cesar Gonzalez-Perez, Incipit CSIC,Spain</li> -->
+        </ul>
+
+        <h2>Steering Committee</h2>
+
+        <ul>
+          <li> Colin Atkinson, University of Mannheim, Germany</li>
+          <li> Thomas Kühne, Victoria University of Wellington, New Zealand</li>
+          <li> Juan de Lara, Universidad Autónoma de Madrid, Spain</li>
+        </ul>
+        <br><br>
+      </div>
+
+      <!-- ------------------------------------------------------------------------------------------ -->
+
+
+      <div class="tab-pane fade" id="past">
+        <h2>Previous MULTI Workshops</h2>
+
+        <ul class="past">
+          <li style="margin-bottom: 0.5em"><a href="https://jku-win-dke.github.io/MULTI2023/">10th International Workshop
+              on Multi-Level Modelling</a>, MODELS 2023, Västerås, Sweden.<br>
+            (&#8594; <a href="https://ieeexplore.ieee.org/xpl/conhome/10350358/proceeding">2023 ACM/IEEE 26th MODELS Companion
+              Proceedings</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"><a href="https://jku-win-dke.github.io/MULTI2022/">9th International Workshop
+              on Multi-Level Modelling</a>, MODELS 2022, Montreal, Canada, Hybrid.<br>
+            (&#8594; <a href="https://dl.acm.org/doi/proceedings/10.1145/3550356">2022 ACM/IEEE 25th MODELS Companion
+              Proceedings</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="https://jku-win-dke.github.io/MULTI2021/">8th International
+              Workshop on Multi-Level Modelling</a>, MODELS 2021, Fukuoka, Japan, Virtual.<br>
+            (&#8594; <a href="https://ieeexplore.ieee.org/xpl/conhome/9643592/proceeding">2021 ACM/IEEE 24th MODELS
+              Companion Proceedings</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="https://www.wi-inf.uni-duisburg-essen.de/MULTI2020/">7th
+              International Workshop on Multi-Level Modelling</a>, MODELS 2020, Montreal, Canada.<br>
+            (&#8594; <a href="https://dl.acm.org/doi/proceedings/10.1145/3417990#heading14">2020 ACM/IEEE 23rd MODELS
+              Companion Proceedings</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="https://www.wi-inf.uni-duisburg-essen.de/MULTI2019/">6th
+              International Workshop on Multi-Level Modelling</a>, MODELS 2019, Munich, Germany.<br>
+            (&#8594; <a href="https://ieeexplore.ieee.org/xpl/conhome/8892449/proceeding">2019 ACM/IEEE 22nd MODELS
+              Companion Proceedings</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="https://www.wi-inf.uni-duisburg-essen.de/MULTI2018/">5th
+              International Workshop on Multi-Level Modelling</a>, MODELS 2018, Copenhagen, Denmark.<br>
+            (&#8594; <a href="http://ceur-ws.org/Vol-2245/">CEUR Proceedings Vol-2245</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="https://www.wi-inf.uni-duisburg-essen.de/MULTI2017/">4th
+              International Workshop on Multi-Level Modelling</a>, MODELS 2017, Austin, Texas, USA.<br>
+            (&#8594; <a href="http://ceur-ws.org/Vol-2019/">CEUR Proceedings Vol-2019</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="http://swt4.informatik.uni-mannheim.de/multi-2016/">3nd
+              International Workshop on Multi-Level Modelling</a>, MODELS 2016, Saint-Malo, France.<br>
+            (&#8594; <a href="http://ceur-ws.org/Vol-1722/">CEUR Proceedings Vol-1722</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="http://miso.es/multi/2015/">2nd International Workshop on
+              Multi-Level Modelling</a>, MODELS 2015, Ottawa, Canada.<br>
+            (&#8594; <a href="http://ceur-ws.org/Vol-1505/">CEUR Proceedings Vol-1505</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="http://miso.es/multi/2014/">1st International Workshop on
+              Multi-Level Modelling</a>, MODELS 2014, Valencia, Spain.<br>
+            (&#8594; <a href="http://ceur-ws.org/Vol-1286/">CEUR Proceedings Vol-1286</a>)
+          </li>
+        </ul>
+      </div>
+
+</body>
+
+</html>
