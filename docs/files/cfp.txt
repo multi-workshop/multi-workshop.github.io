@@ -1,0 +1,68 @@
+=======================================================================================================
+Call for Papers
+
+11th International Workshop on Multi-Level Modeling (MULTI)
+
+Co-located with the
+    ACM / IEEE 27th International Conference on Model Driven Engineering Languages and Systems (MODELS)
+    September 22 - 24, 2024
+
+https://multi-workshop.github.io/
+
+=======================================================================================================
+
+MULTI 2024, to be held in conjunction with MODELS’24, Linz, Austria, will be the 11th workshop focusing on multi-level modeling. The MULTI workshop series is the premier venue for researchers and practitioners working on multi-level modeling and multi-level software development. Multi-level modeling represents a new object-oriented paradigm for both conceptual modeling and software en gineering. In contrast to conventional two-level approaches, it supports an un bounded number of classification levels and introduces concepts and mechanisms that foster reuse, adaptability, and control. While multi-level languages and tools have reached considerable maturity, the field still offers numerous challenges.
+
+TOPICS
+======
+
+Topics for regular and position papers include, but are not limited to:
+
+– the nature of elements in a multi-level hierarchy
+– the importance and role of deep characterization mechanisms
+– fundamental aspects of MLM, such as model composition and decomposition
+– formal approaches to MLM
+– integration of modeling and programming languages in a multi-level setting
+– constraints in a multi-level setting
+– definition of behavioral semantics in a multi-level setting
+– industrial case studies
+– applying MLM to large and/or real-world problems
+– criteria and approaches for comparing MLM approaches
+
+TYPES OF SUBMISSIONS
+====================
+
+MULTI 2024 solicits four kinds of papers:
+
+- regular papers (10 pages)
+- challenge submissions (10 pages)
+- position papers (5 pages)
+- industrial abstracts (2 pages)
+
+Challenge papers are intended to elaborate a solution for the previously published MULTI challenges (https://multi-workshop.github.io/#challenge) thus presenting different modeling solutions, promoting a comparison between techniques and languages.
+
+Industrial abstracts are intended to encourage the participation of authors from industry who are invited to present relevant multi-level modeling challenges they face in their fields promoting an exchange of knowledge between industry and academia.
+
+IMPORTANT DATES
+===============
+
+Paper Submission    : July  5th, 2024
+Author Notification : August 7th, 2024
+Camera Ready Due    : August 16th, 2024
+Workshop Date       : September 22-24th, 2024
+
+SUBMISSION AND PUBLICATION
+==========================
+
+Accepted papers will be included in the MODELS 2024 companion published by the ACM. 
+Accepted industrial abstracts will be published on the MULTI 2024 workshop website.
+
+More information and submission details:
+https://multi-workshop.github.io/
+
+ORGANIZERS 
+==========
+
+- Claudenir Fonseca, University of Twente, Netherlands
+- Fernando Mac ́ıas, IMDEA Software Institute, Spain
+- Gergely Mezei, Budapest University of Technology and Economics, Hungary
