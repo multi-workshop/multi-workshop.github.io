@@ -1,3 +1,8 @@
-https://w3id.org/multi-workshop
-does not work yet
+The shortcut 
+purl.org/multi 
+works
+
 -> https://multi-workshop.github.io/
+
+The shortcut https://w3id.org/multi-workshop
+does not work 
