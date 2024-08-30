@@ -27,7 +27,7 @@
   <script>
     $(document).ready(function () {
       var current = window.location.href;
-      $('#nav li a').each(function () {
+      $('#nav', 'li', 'a').each(function () {
         var $this = $(this);
         if (current.indexOf($this.attr('href')) !== -1) {
           $this.tab('show');
