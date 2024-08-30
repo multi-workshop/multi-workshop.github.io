@@ -31,9 +31,9 @@
     src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
   <script>
-    $(document).on( "click", function () {
+    $(document).ready(function () {
       var current = window.location.href;
-      $('#nav li a').each(function () {
+      $('a').each(function () {
         var $this = $(this);
         if (current.indexOf($this.attr('href')) !== -1) {
           $this.tab('show');
