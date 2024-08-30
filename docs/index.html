@@ -19,19 +19,21 @@
   </script>
 
   <script type="application/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="application/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script type="application/javascript"
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
   <script>
-	$(document).ready(function() {
-		var current = window.location.href;
-		$('#nav li a').each(function(){	
-			var $this = $(this);
-			if(current.indexOf($this.attr('href')) !== -1){
-				$this.tab('show');
-			}
-		})
-	});
+    $(document).ready(function () {
+      var current = window.location.href;
+      $('#nav li a').each(function () {
+        var $this = $(this);
+        if (current.indexOf($this.attr('href')) !== -1) {
+          $this.tab('show');
+        }
+      })
+    });
   </script>
 
   <style>
@@ -91,7 +93,8 @@
       color: #513C35;
     }
 
-    .nav-tabs .nav-item.show, .nav-link, .nav-tabs, .nav-link.active {
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
       color: #513C35;
       background-color: #FBF9F7;
       border-color: #513C35 #513C35 #FBF9F7;
