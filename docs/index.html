@@ -19,21 +19,19 @@
   </script>
 
   <script type="application/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script type="application/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script type="application/javascript"
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
   <script>
-    $(document).ready(function () {
-      var current = window.location.href;
-      $('#nav li a').each(function () {
-        var $this = $(this);
-        if (current.indexOf($this.attr('href')) !== -1) {
-          $this.tab('show');
-        }
-      })
-    });
+	$(document).ready(function() {
+		var current = window.location.href;
+		$('#nav li a').each(function(){	
+			var $this = $(this);
+			if(current.indexOf($this.attr('href')) !== -1){
+				$this.tab('show');
+			}
+		})
+	});
   </script>
 
   <style>
@@ -93,8 +91,7 @@
       color: #513C35;
     }
 
-    .nav-tabs .nav-item.show .nav-link,
-    .nav-tabs .nav-link.active {
+    .nav-tabs .nav-item.show, .nav-link, .nav-tabs, .nav-link.active {
       color: #513C35;
       background-color: #FBF9F7;
       border-color: #513C35 #513C35 #FBF9F7;
@@ -140,18 +137,7 @@
       padding: 0.33em;
     }
 
-    .h1,
-    .h2,
-    .h3,
-    .h4,
-    .h5,
-    .h6,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
       margin-bottom: .5rem;
       font-weight: 500;
       line-height: 1.2;
@@ -231,6 +217,9 @@
       </li>
     </ul>
 
+	  
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+	  
     <div id="myTabContent" class="tab-content">
 
       <div class="tab-pane fade active show" id="home">
@@ -258,8 +247,8 @@
 
       </div>
 
+	    
 <!-- -------------------------------------------------------------------------------------------------------------------- -->
-	  
 	  
 <div class="tab-pane fade" id="cfp">
 
@@ -330,7 +319,8 @@
   </p>
   
   </div>
-	  
+
+	    
 <!-- -------------------------------------------------------------------------------------------------------------------- -->
 	  
 	  
@@ -345,8 +335,9 @@
   </ul>
 
   </div>
-      <!-- ------------------------------------------------------------------------------------ -->
 
+	    
+<!-- -------------------------------------------------------------------------------------------------------------------- -->  
 
       <div class="tab-pane fade" id="committees">
         <h2>Organizers 2024</h2>
@@ -454,7 +445,10 @@
 <tr><td width="5%"></td><td>Thomas Kühne and Pierre Maier</td></tr>  <tr height="16px"></tr>
 </table>	
 </div>  
-	  
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+	    
 <div class="tab-pane fade" id="challenges">
 <h2>Challenges</h2>
 
@@ -534,8 +528,6 @@
   <td><p style="margin-bottom: 0.5em;">G. Mezei, T. Kühne, V. Carvalho and B. Neumayr, "The MULTI Collaborative Comparison Challenge," 2021 ACM/IEEE International Conference on Model Driven Engineering Languages and Systems Companion (MODELS-C), Fukuoka, Japan, 2021, pp. 495-496, doi: 10.1109/MODELS-C53483.2021.00077.
 	  </p>
   </td></tr>
-	  
-  <tr><td>  
   
   <tr><td style="vertical-align: top;">[2]&nbsp;</td> 
   <td>J. P. A. Almeida, A. Rutle, M. Wimmer and T. Kühne, "The MULTI Process Challenge," 2019 ACM/IEEE 22nd International Conference on Model Driven Engineering Languages and Systems Companion (MODELS-C), Munich, Germany, 2019, pp. 164-167, doi: 10.1109/MODELS-C.2019.00027.
@@ -544,8 +536,11 @@
 	  
 <br><br>	  
 </div>
-	  
 
+	    
+
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+	    
       <div class="tab-pane fade" id="past">
         <h2>Previous MULTI Workshops</h2>
 
