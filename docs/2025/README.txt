@@ -1,1 +1,2 @@
-This subfolder should contain the MULTI 2025 website contents (index.html and any supporting material).
+The local "files" folder is for 2025-specific files.
+Files that are invariant (e.g.,. challenge descriptions) should go into the global "files" folder. 
