@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MULTI Workshop</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-89QVQG6KE0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-89QVQG6KE0');
+</script>
+	
+  <script type="application/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script type="application/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script type="application/javascript"
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      var current = window.location.href;
+      $('#nav li a').each(function () {
+        var $this = $(this);
+        if (current.indexOf($this.attr('href')) !== -1) {
+          $this.tab('show');
+        }
+      })
+    });
+  </script>
+
+  <style>
+    body {
+      color: black;
+      background-color: #F1ECE6;
+      font-family: Arial, Helvetica;
+    }
+
+    .container-fluid {
+      max-width: 55em;
+      min-width: 40em;
+      margin: auto;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: #FBF9F7;
+    }
+
+    a {
+      color: darkblue;
+    }
+
+    .header {
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+
+    .header img {
+      width: 100%;
+      min-width: 880px;
+    }
+
+    .header div {
+      position: absolute;
+      top: 0.5em;
+      left: 0em;
+      font-size: 19px;
+      color: #513C35;
+      text-align: left;
+    }
+
+    .header>div>p {
+      padding: 10px;
+      margin: 0px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .nav {
+      background-color: #F1ECE6;
+      flex-wrap: nowrap;
+      border-color: #513C35;
+    }
+
+    .nav-tabs .nav-link {
+      color: #513C35;
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+      color: #513C35;
+      background-color: #FBF9F7;
+      border-color: #513C35 #513C35 #FBF9F7;
+      margin-bottom: -1px;
+    }
+
+    .nav-item:hover {
+      background-color: #FBF9F7;
+    }
+
+    .nav-item>a {
+      font-weight: bold;
+    }
+
+    .tab-content {
+      border-left: thin solid #513C35;
+      border-right: thin solid #513C35;
+      border-bottom: thin solid #513C35;
+    }
+
+    .tab-pane {
+      padding-left: 2em;
+      padding-top: 2em;
+      padding-right: 2em;
+      margin-bottom: 4em;
+      text-align: justify;
+    }
+
+    .col-sm-4 {
+      padding: 1em;
+    }
+
+    .col-sm-4 img {
+      height: 250px;
+      border: thin solid black;
+      text-align: left;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .col-sm-4 p {
+      text-align: left;
+      padding: 0.33em;
+    }
+
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+      margin-bottom: .5rem;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #513C35;
+    }
+
+    h2 {
+      margin-top: 0em;
+      margin-bottom: 0.5em;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+
+    h4 {
+      padding-top: 10px;
+    }
+
+    img.impression {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+    }
+
+    small {
+      font-size: 16px;
+      padding-bottom: 6px;
+      color: #3399f3;
+    }
+	
+	td.timeslot{
+		width: 8.5%;
+		padding-left: 16px;
+		vertical-align: top;
+	}
+	
+	td {
+		text-align: left;
+	}
+	
+	tr {
+		padding-top: 10px;
+	}
+  .card-img-top {
+    width: 100%;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="header">
+      <img src="img/stones.png" />
+      <div style="zoom:1.14">
+        <p style="font-size: 23px; line-height: 1.4; margin-bottom: -0.5em">
+          MULTI 2025 - 12<sup>th</sup> International Workshop <br/>
+          on Multi-Level Modeling</p>
+        <p style="line-height: 1.4;">Date TBD<br/>
+          MODELS 2025</p>
+        <!-- <p style="font-size: 23px; line-height: 1.4; margin-bottom: -0.5em">
+          MULTI - International Workshop on<br>
+          Multi-Level Modeling</p> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <ul class="nav nav-tabs" id="nav" style="padding-left: 0.5em">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#dates">Dates</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#cfp">Calls 2025</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#challenges">Challenges</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#committees">Committees</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#program">Program</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#past">Past</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://homepages.ecs.vuw.ac.nz/Groups/MultiLevelModeling/" target="_blank">Wiki</a>
+      </li>
+    </ul>
+
+	  
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+	  
+    <div id="myTabContent" class="tab-content">
+
+      <div class="tab-pane fade active show" id="home">
+        <p>
+          The MULTI workshop series is the premier venue for researchers and practitioners working on multi-level modeling and multi-level software development. Multi-level modeling represents a new object-oriented paradigm for both conceptual modelling and software engineering. In contrast to conventional two-level approaches, it supports an unbounded number of classification levels and introduces concepts and mechanisms that foster reuse, adaptability, and control. While multi-level languages and tools have reached considerable maturity, the field still offers numerous challenges.
+        </p>
+        <p>
+          The MULTI workshop series aims at providing a platform for exchanging ideas and promoting further development of multi-level languages, methods, and tools. A particular goal is to encourage the community to, beyond proposing new approaches, analyse different approaches to multi-level modelling and define objective ways to evaluate their respective strengths and weaknesses.
+        </p>
+        <p>
+          The <b>12<sup>th</sup> International Workshop on Multi-Level Modeling (MULTI 2025)</b> will be a single day event to held at the MODELS'25 conference.
+        </p>
+
+        <h4>Latest updates</h4>   
+        <ul>
+          <li>Website created (8 November 2024)</li>
+	</ul>
+      </div>
+
+	    
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+	  
+	  
+  <div class="tab-pane fade" id="dates">
+  <h2 class="pb-2">Important Dates</h2>
+
+  TBD
+
+  </div>
+
+	    
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+	  
+<div class="tab-pane fade" id="cfp">
+
+  TBD
+
+</div>
+
+	    
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+	    
+<div class="tab-pane fade" id="challenges">
+<h2>Challenges</h2>
+
+<p> Multi-level modeling challenges are designed as benchmark modeling scenarios that aim to support objective comparisons
+	between multi-level modeling approaches, allow technologies to demonstrate their abilities, stress-test technologies in order to expose potential weaknesses, and deepen the mutual understanding of approaches.
+</p>
+	  
+<!--
+  <p>Multi-level modeling addresses the modeling of subject domains that benefit from an explicit recognition of multiple 
+	  levels of domain representation, such as software development, process modeling, capturing organizational roles,
+	  biological taxonomies, product hierarchies, and so on. Over the span of two decades many approaches for multi-level
+	  modeling have been proposed, all sharing the goal of extending traditional two-level approaches with constructs and 
+	  concepts that naturally support multiple levels of domain representation, with the goal to increase model expressiveness while
+	  simultaneously reducing model complexity.</p>
+
+<p>Numerous advances in multi-level modeling approaches and tools have, however, lead to a proliferation of available 
+	approaches, thus displaying a lack of consensus on what kinds of constructs and concepts provide the best support
+	for multi-level modeling. In part, differences are owed to different application targets or different prioritizations
+	of desirable model properties, yet not all existing differences can necessarily be motivated in this manner.
+	Some differences at both foundational and realization levels may be perfectly justifiable while others may be
+	reconcilable without diminishing effects.</p>
+-->
+
+<h3>Call for Challenges</h3>
+<p>As part of our efforts to get more industry input for the upcoming MULTI@MODELS workshop, we are inviting all of you to submit challenges to the <a href="files/CallForChallenges.pdf">Call for Challenges</a> we have created. We are counting on your expertise and creativity to enrich the workshop’s outcomes. Don’t hesitate to reach out if you have any questions or need assistance with your submission.</p>	  
+
+<h3>Warehouse Challenge</h3>	  
+<p>  The "Warehouse" challenge references a domain featuring representations of product copies, product specifications and product specification types. 
+	 A particular emphasis is on how to guarantee certain properties at the product level without fully determining them, in other words, to support flexible but constrained variability.
+</p>
+ <p>
+	The submission requirements for the Warehous Challenge and the domain example to use are available from
+	the <a href="files/MULTI%20Warehouse%20Challenge.pdf">MULTI Warehouse Challenge Description</a>. In particular note that submitted solutions must have the subtitle
+	"A contribution to the MULTI Warehouse challenge".
+</p>
+ <p>
+	If you would like to receive any kind of clarification regarding the challenge requirements, please contact the challenge authors who will be more than happy to answer any questions.
+</p>		  
+	
+<h3>Collaborative Comparison Challenge</h3>
+<p>The Collaborative Comparison challenge aims at improving the mutual understanding of approaches within the multi-level modeling community
+	by encouraging collaborations which are an opportunity to justify and thus clarify the need for existing differences,
+	or, alternatively, lead towards homogenizing multi-level modeling.
+</p>
+
+<p>Towards this end, the Collaborative Comparison Challenge specifically
+	requires the application of two or more approaches to a prescribed domain example and mandates the discussion of commonalities and
+	differences between the approaches in a joint paper authored by proponents of different multi-level modeling approaches.
+</p>
+
+<p>Commonalities and differences should be discussed as they manifest themselves in the conceptualization of the domain example 
+	but also at a more general level. Respective discussion subjects which authors may choose to elaborate on 
+	include, but are not limited to, fundamental concepts such as the nature of levels, cross-level relationships, 
+	classification vs generalization, deep characterization, the treatment of attributes and operations, and the use
+	of structural and behavioral constraints.
+</p>
+
+<p> Discussions should seek to explore justifications for, and/or potential reconciliations of, fundamental differences 
+	rather than just documenting realization choices. An optional avenue towards contributing to the clarification of
+	differences is the formalization of foundational concepts, thereby possibly discovering open questions and/or 
+	potential for unification.</p>
+
+<p> The submission requirements for the Collaborative Comparison Challenge and the domain example to use are available from
+	the <a href="files/MULTI%20Collaborative%20Comparison%20Challenge.pdf">MULTI Comparison Challenge Description</a> [1]. 
+	In particular note that submitted solutions must have the subtitle
+	"A contribution to the MULTI Collaborative Comparison challenge".
+</p>
+	
+<br>	  
+	
+<h3>Previous Challenges</h3>	  
+<p>Solutions to the <a href="files/MULTI%20Process%20Challenge.pdf">MULTI Process Challenge</a> [2] are still welcome. Note that submitted solutions must have the subtitle
+	"A contribution to the MULTI Process challenge".</p> 
+	 
+  <h3>References</h3>
+	
+  <table style="margin-left: 0.5em;">
+  
+  <tr style="margin-bottom: 0.5em;"><td style="vertical-align: top;">[1]&nbsp;</td> 
+  <td><p style="margin-bottom: 0.5em;">G. Mezei, T. Kühne, V. Carvalho and B. Neumayr, "The MULTI Collaborative Comparison Challenge," 2021 ACM/IEEE International Conference on Model Driven Engineering Languages and Systems Companion (MODELS-C), Fukuoka, Japan, 2021, pp. 495-496, doi: 10.1109/MODELS-C53483.2021.00077.
+	  </p>
+  </td></tr>
+  
+  <tr><td style="vertical-align: top;">[2]&nbsp;</td> 
+  <td>J. P. A. Almeida, A. Rutle, M. Wimmer and T. Kühne, "The MULTI Process Challenge," 2019 ACM/IEEE 22nd International Conference on Model Driven Engineering Languages and Systems Companion (MODELS-C), Munich, Germany, 2019, pp. 164-167, doi: 10.1109/MODELS-C.2019.00027.
+  </td></tr>
+  </table>	  
+	  
+<br><br>	  
+</div>
+
+	    
+
+<!-- -------------------------------------------------------------------------------------------------------------------- -->  
+
+      <div class="tab-pane fade" id="committees">
+        <h2>Organizers 2025</h2>
+
+        <div class="card-deck">
+          <div class="card">
+            <img src="img/Lange.jpg" class="card-img-top" alt="Arne Lange" />
+            <div class="card-body">
+              <h5 class="card-title">Arne Lange</h5>
+              <p class="card-text text-left">Karlsruhe Institute of Technology</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/fernando-macias.jpg" class="card-img-top" alt="Fernando Macias" />
+            <div class="card-body">
+              <h5 class="card-title">Fernando Macías</h5>
+              <p class="card-text text-left">Anzen Aerospace Engineering, Spain</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/pierre-maier-2.JPEG" class="card-img-top" alt="Pierre Maier" />
+            <div class="card-body">
+              <h5 class="card-title">Pierre Maier</h5>
+              <p class="card-text text-left">University of Duisburg-Essen, Essen, Germany</p>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <h2>Program Committee 2025</h2>
+
+        <ul>
+          TBD
+        </ul>
+
+        <h2>Steering Committee</h2>
+
+        <ul>
+          <li> Colin Atkinson, University of Mannheim, Germany</li>
+          <li> Thomas Kühne, Victoria University of Wellington, New Zealand</li>
+          <li> Juan de Lara, Universidad Autónoma de Madrid, Spain</li>
+        </ul>
+        <br><br>
+      </div>
+	  
+
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="tab-pane fade" id="program">
+<h2>Program</h2>
+
+TBD
+
+</div>  
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+	    
+      <div class="tab-pane fade" id="past">
+        <h2>Previous MULTI Workshops</h2>
+
+        <ul class="past">
+          <li style="margin-bottom: 0.5em"><a href="2024/index.html">11th International Workshop
+              on Multi-Level Modelling</a>, MODELS 2024, Linz, Austria.<br>
+            (&#8594; <a href="https://dl.acm.org/doi/proceedings/10.1145/3652620#heading13">2024 ACM/IEEE 27th MODELS Companion
+              Proceedings</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"><a href="https://jku-win-dke.github.io/MULTI2023/">10th International Workshop
+              on Multi-Level Modelling</a>, MODELS 2023, Västerås, Sweden.<br>
+            (&#8594; <a href="https://ieeexplore.ieee.org/xpl/conhome/10350358/proceeding">2023 ACM/IEEE 26th MODELS Companion
+              Proceedings</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"><a href="https://jku-win-dke.github.io/MULTI2022/">9th International Workshop
+              on Multi-Level Modelling</a>, MODELS 2022, Montreal, Canada, Hybrid.<br>
+            (&#8594; <a href="https://dl.acm.org/doi/proceedings/10.1145/3550356">2022 ACM/IEEE 25th MODELS Companion
+              Proceedings</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="https://jku-win-dke.github.io/MULTI2021/">8th International
+              Workshop on Multi-Level Modelling</a>, MODELS 2021, Fukuoka, Japan, Virtual.<br>
+            (&#8594; <a href="https://ieeexplore.ieee.org/xpl/conhome/9643592/proceeding">2021 ACM/IEEE 24th MODELS
+              Companion Proceedings</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="https://www.wi-inf.uni-duisburg-essen.de/MULTI2020/">7th
+              International Workshop on Multi-Level Modelling</a>, MODELS 2020, Montreal, Canada.<br>
+            (&#8594; <a href="https://dl.acm.org/doi/proceedings/10.1145/3417990#heading14">2020 ACM/IEEE 23rd MODELS
+              Companion Proceedings</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="https://www.wi-inf.uni-duisburg-essen.de/MULTI2019/">6th
+              International Workshop on Multi-Level Modelling</a>, MODELS 2019, Munich, Germany.<br>
+            (&#8594; <a href="https://ieeexplore.ieee.org/xpl/conhome/8892449/proceeding">2019 ACM/IEEE 22nd MODELS
+              Companion Proceedings</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="https://www.wi-inf.uni-duisburg-essen.de/MULTI2018/">5th
+              International Workshop on Multi-Level Modelling</a>, MODELS 2018, Copenhagen, Denmark.<br>
+            (&#8594; <a href="http://ceur-ws.org/Vol-2245/">CEUR Proceedings Vol-2245</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="https://www.wi-inf.uni-duisburg-essen.de/MULTI2017/">4th
+              International Workshop on Multi-Level Modelling</a>, MODELS 2017, Austin, Texas, USA.<br>
+            (&#8594; <a href="http://ceur-ws.org/Vol-2019/">CEUR Proceedings Vol-2019</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="http://swt4.informatik.uni-mannheim.de/multi-2016/">3nd
+              International Workshop on Multi-Level Modelling</a>, MODELS 2016, Saint-Malo, France.<br>
+            (&#8594; <a href="http://ceur-ws.org/Vol-1722/">CEUR Proceedings Vol-1722</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="http://miso.es/multi/2015/">2nd International Workshop on
+              Multi-Level Modelling</a>, MODELS 2015, Ottawa, Canada.<br>
+            (&#8594; <a href="http://ceur-ws.org/Vol-1505/">CEUR Proceedings Vol-1505</a>)<br>
+          </li>
+          <li style="margin-bottom: 0.5em"> <a href="http://miso.es/multi/2014/">1st International Workshop on
+              Multi-Level Modelling</a>, MODELS 2014, Valencia, Spain.<br>
+            (&#8594; <a href="http://ceur-ws.org/Vol-1286/">CEUR Proceedings Vol-1286</a>)
+          </li>
+        </ul>
+      </div>
+</body>
+</html>
