@@ -108,7 +108,6 @@ nav a:hover .external-link {
     background-position-x: left, left, right, right;
     background-size: 50% 100%, 50% 100%, 50% 100%, auto 100%;
     padding: 120px 0 60px;
-    min-height: 100%;
 }
 
 .hero-content {
@@ -336,8 +335,6 @@ footer {
     
     .hero {
         padding-top: 20px;
-        height: 3000px;
-        min-height: 1000px;
     }
     
     
