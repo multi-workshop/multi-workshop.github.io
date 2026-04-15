@@ -177,6 +177,7 @@ nav a:hover .external-link {
 .hero a {
     color: #8b3f34;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .hero a:hover {
