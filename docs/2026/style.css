@@ -185,6 +185,10 @@ nav a:hover .external-link {
     text-decoration: underline;
 }
 
+ul.pc li a {
+    font-weight: normal;
+}
+
 .btn-primary {
     background: #8b3f34;
     color: #ffffff;
