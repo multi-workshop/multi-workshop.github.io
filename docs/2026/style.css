@@ -139,6 +139,15 @@ nav a:hover .external-link {
     color: #6e2f26;
 }
 
+.color {
+    color:#6e2f26;
+}
+
+p.highlight {
+    padding: 7px;
+    border: dashed black 3px;
+}
+
 .hero h2 {
     font-size: 26px;
     margin-bottom: 0px;
