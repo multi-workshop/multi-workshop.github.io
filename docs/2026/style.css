@@ -96,6 +96,44 @@ nav a:hover .external-link {
     padding-left: 25px;
 }
 
+i i {
+    font-style: normal;
+}
+
+
+#program tr {
+    width: 1000px
+}
+
+#program h3 {
+    margin: 10px 0 0 0;
+    font-style: normal;
+}
+
+#program .timeslot {
+    width: 11%
+}
+
+#program tr, #program td {
+    vertical-align: top;
+}
+
+.paper summary {
+    cursor: pointer;
+}
+
+.paper summary::marker {
+    font-size: 0.8em;
+}
+
+.paper .abstract {
+    margin: 0.7em 0 0.7em 1.2em;
+    padding-left: 1em;
+    border-left: 3px solid #ddd;
+    line-height: 1.5;
+    text-align:justify;
+}
+
 
 /* HERO */
 .hero-bg {
@@ -125,7 +163,7 @@ nav a:hover .external-link {
 }
 
 .hero-text {
-    max-width: 700px;
+    max-width: 880px;
     background-image: linear-gradient(to right, rgba(244, 236, 232, 1) 55%, rgba(244, 236, 232, 0.2) 100%);
 }
 
@@ -323,6 +361,35 @@ footer {
     border-radius: 5%;
     margin-bottom: 20px;
     box-shadow: 0 0 15px 5px rgba(0,0,0,0.1);
+}
+
+.speaker {
+    font-style: normal;
+    margin: 0;
+    font-size: 20px;
+}
+
+.keynote * {
+    vertical-align: top;
+}
+
+.keynote .profile {
+    text-align: left;
+    vertical-align: top;
+}
+
+.keynote .profile img {
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.1);
+}
+
+.keynote p {
+    padding: 0 20px;
+    font-size: 14px;
 }
 
 .chair-info h3 {

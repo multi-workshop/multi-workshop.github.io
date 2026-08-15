@@ -46,8 +46,566 @@
 
         <div class="hero-text">
             <h4>Program</h4>
+            
+            <table id="program">
+            
+                <tr> <td colspan="2"><h5>Sun, Oct 4</h5></td> </tr>
+                <tr> 
+                    <td colspan="2">
+                        <h3>Session 1: Foundations of Multi-Level Modeling<br>
+                        9:15 &ndash; 10:30 </h3>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                    Chair: Pierre Maier
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">9:15 h</td>
+                    <td>Welcome and Introduction</td>
+                </tr>
+                <tr> 
+                    <td class="timeslot">9:20 h</td>
+                    <td class="paper">
+                    <details>
+                        <summary>
+                            <i>Modeled Field Semantics: Making Field Behavior Explicit in Multi-Level Modeling</i><br>
+                            Gergely Mezei, Ferenc Attila Somogyi and Gergely Gembela
+                        </summary>
+
+                        <div class="abstract">
+                            <strong>Abstract:</strong>
+                            <i>	Multi-level modeling provides established mechanisms for describing how fields 
+                                characterize elements across multiple abstraction steps. 
+                                Potency-based approaches are especially useful when the intended depth 
+                                of characterization is known and can be expressed directly in the modeling 
+                                language. This paper presents a different solution, referred to as Modeled 
+                                Field Semantics (MFS). Instead of defining field behavior only as a built-in 
+                                language mechanism, MFS represents certain aspects of field behavior explicitly 
+                                in the model.<br><br>
+
+The motivation for MFS comes from cases where field behavior is not limited to assigning a value at a predetermined 
+                                abstraction depth. A value may be interpreted differently by classifier-objects and 
+                                instance-objects, and the differences may also become part of the field structure 
+                                itself, for example when a general field later continues as several distinct fields 
+                                representing different roles. In MFS, such decisions are not treated only as 
+                                consequences of predefined field semantics, but can be expressed in the model 
+                                through explicit field relationships, assignment rules, and value access operations.
+                                <br><br>
+
+MFS treats selected aspects of field behavior as part of the modeled semantics. Field lineage, value-assignment rules, 
+                                getter and setter behavior, and their configuration can be represented explicitly 
+                                instead of being fully pre-encoded as one fixed language semantics. The result is a 
+                                way to describe field semantics in which structural behavior and value interpretation 
+                                remain explicit, adjustable, and subject to validation within the model.</i>
+                        </div>
+                        
+                    </details>
+                        
+                    </td>
+                </tr>
+                <tr> 
+                    <td class="timeslot">9:55 h</td>
+                    <td class="paper">
+                    <details>
+                        <summary>
+                            <i>Deep Reactions: Realizing and Evaluating Consistency Preservation for Multi-Level, Multi-View Models</i><br>
+                            Annika Kienle, Arne Lange, Thomas Weber, Lars König, Nathan Hagel and Erik Burger
+                        </summary>
+
+                        <div class="abstract">
+                            <strong>Abstract:</strong>
+                            <i>In view-based development, consistency plays a central role across concrete models.
+Consistency can be achieved automatically through consistency-preservation rules defined, for instance, in a change-driven language such as the Reactions language of the Vitruvius framework.
+This language, however, assumes the classical two-level architecture with a strict separation of type and instance level and can therefore only handle multi-level models through their generic linguistic structure.
+This forces domain questions to be encoded as not statically typed string operations on infrastructure metaclasses.
+Based on a previously published vision, this paper presents the Deep Reactions language.
+It lets a stable region of a deep model serve as an ontological metamodel, over which ontological types and features can be referenced directly and deep characterization through offspring-aware triggers can be exploited.
+Building on the stable code generation of the original Reactions language, a pre-processing step first transforms Dep Reactions into regular Reactions which ensures compatibility with existing implementations.
+Our evaluation shows that the number of referenced metamodels and the token count can be reduced while removing 83% of statically unvalidated type references.</i>
+                        </div>
+                        
+                    </details>
+                        
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">10:30 h</td>
+                    <td>Coffee Break</td>
+                </tr>
+                
+                <tr> 
+                    <td colspan="2">
+                        <h3>Session 2: Practical Considerations of Multi-Level Modeling<br>
+                        11:00 &ndash; 12:45 </h3>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                    Chair: TBD
+                    </td>
+                </tr>
+                
+                 <tr> 
+                    <td class="timeslot">11:00 h</td>
+                    <td class="paper">
+                    <details>
+                        <summary>
+                            <i>Multi-Level Modeling as the Execution Substrate of a No-Code Platform: An Industrial Experience with Metada</i><br>
+                           Petr Smolik
+                        </summary>
+
+                        <div class="abstract">
+                            <strong>Abstract:</strong>
+                            <i>We report on an industrial realization of multi-level modeling
+(MLM): Metada, a commercial enterprise no-code application platform
+whose runtime interprets models directly rather than generating
+code. Its foundation is a two-layered meta-architecture —
+RBSM, a linguistic meta-metamodel offering one deep instantiation
+relationship with per-property propagation controls, and Meta4, an
+ontological metamodel of concepts and typed properties built on
+RBSM. We claim no new multi-level concepts: RBSM’s primitives
+align with the orthogonal classification architecture, characterization
+potency, and the durability/mutability vitality properties
+established in prior work. Our contribution is an engineering and
+experience one — how these concepts behave once they become
+the substrate of a persisted, multi-tenant business-application runtime,
+integrated end-to-end with storage, an operational constraint
+layer, and model-driven user interfaces. We use a published MLM
+challenge domain as a worked, executable, test-covered example,
+contrast our engineering decisions with five research approaches
+(DeepTelos, DMLA, FMMLx, DLM, Melanee), and draw on three production
+and reference models — an ArchiMate metamodel reused
+by folder inheritance, a multi-tenant ticketing platform, and a 6000-
+product banking catalog that instantiates down to a client-holding
+level (a three-level chain). We distill lessons, most notably that deep
+values are inherited by derivation, caching, and search-indexing
+rather than duplication, and that integrity is best expressed as
+platform-native operations rather than a declarative constraint
+language.</i>
+                        </div>
+                        
+                    </details>
+                        
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">11:35 h</td>
+                    <td class="paper">
+                    <details>
+                        <summary>
+                            <i>Transforming a large Flat Model into a Multi-Level Model: A Retrospective Case Study</i><br>
+                            Ulrich Frank
+                        </summary>
+
+                        <div class="abstract">
+                            <strong>Abstract:</strong>
+                            <i>This paper presents a case study comprising the analysis and transformation of a large 
+                                flat object model into a multi-level model. To support the transformation, a 
+                                corresponding method is introduced and applied. The resulting multi-level model is 
+                                evaluated against the original requirements as well as with regard to further aspects.</i>
+                        </div>
+                        
+                    </details>
+                        
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">12:10 h</td>
+                    <td class="paper">
+                    <details>
+                        <summary>
+                            <i>Property-Precedence Analysis for Model Deepening</i><br>
+                            Pierre Maier
+                        </summary>
+
+                        <div class="abstract">
+                            <strong>Abstract:</strong>
+                            <i>Despite widely accepted prospects, multi-level modeling remains sparsely adopted in 
+                                industry. <i>Model deepening</i> &ndash;, i.e., the re-engineering of flat 
+                                representations into multi-level models &ndash; has the potential to facilitate the 
+                                industrial adoption of multi-level modeling by transforming models and representations 
+                                of information systems an organization already possesses. Prior research has focused 
+                                primarily on transformation operations; comparatively little attention has been devoted 
+                                to the preceding analysis problem of identifying beneficial model-deepening 
+                                transformations. Existing approaches typically rely on type-level heuristics such as 
+                                naming patterns, aggregation relationships, or association multiplicities. 
+                                Since these heuristics suggest multi-level hierarchies based on modeling choices and 
+                                conventions rather than the represented instance population, they cannot reliably 
+                                distinguish genuine classification levels from incidental modeling choices.
+                                <br><br>
+
+                                This paper proposes <i>property-precedence analysis</i>, an instance-driven approach to 
+                                conduct model-deepening analysis. Building upon Bunge's ontological notion of property 
+                                precedence, the proposed approach uncovers possible multi-level hierarchies by 
+                                analyzing the distribution of property values across model instances rather than 
+                                relying on type-level heuristics. The analysis is implemented in the prototype 
+                                ModelDeepener for the MLM language 
+                                FMML<sup>x</sup> and demonstrated using two example models involving 
+                                associations and attributes. Several challenges in property-precedence analysis 
+                                for model deepening remain, such as handling conflicting precedence relations and 
+                                naming newly suggested classes. Further research should investigate to what degree 
+                                the identified challenges may be counteracted and how property-precedence analysis 
+                                may be complemented with type-level heuristics for model deepening.</i>
+                        </div>
+                        
+                    </details>
+                        
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">12:45 h</td>
+                    <td>Lunch</td>
+                </tr>
+                
+                 <tr> 
+                    <td colspan="2">
+                        <h3>Session 3: Support for Creating and Managing Multi-Level Models<br>
+                        14:30 &ndash; 15:45 </h3>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                    Chair: TBD
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">14:30 h</td>
+                    <td class="paper">
+                    <details>
+                        <summary>
+                            <i>Assessing Capabilities of Large Language Models for Multi-Level Modeling</i><br>
+                            Arianna Fedeli, Ludovico Iovino, Maria Teresa Rossi and Adrian Rutle
+                        </summary>
+
+                        <div class="abstract">
+                            <strong>Abstract:</strong>
+                            <i>Large Language Models (LLMs) are increasingly being explored in Model-Driven 
+                                Engineering as assistants for generating, transforming, and evolving modeling 
+                                artifacts from natural language descriptions. Existing work, however, has mainly 
+                                focused on traditional two-level modeling settings, while the applicability of 
+                                LLMs to multilevel modeling remains largely unexplored. Multilevel modeling 
+                                introduces specific challenges, including reasoning across multiple abstraction 
+                                levels, handling deep instantiation, preserving cross-level consistency, and 
+                                distinguishing between types, instances, and linguistic classifications.<br><br>
+
+This paper investigates the capabilities and limitations of LLMs in supporting multilevel modeling tasks from 
+                                natural language descriptions. We propose a scenario-based evaluation framework 
+                                that combines two representative case studies from the MULTI challenge series with 
+                                a conventional two-level modeling benchmark. The framework evaluates LLMs across six 
+                                representative MLM tasks, covering hierarchy navigation, additive and subtractive 
+                                model evolution, structural modifications, instance generation, and complete 
+                                hierarchy synthesis. The results show that LLMs can support exploratory MLM tasks, 
+                                but their outputs remain candidate artifacts that require expert validation, 
+                                especially when correctness depends on cross-level reasoning and the preservation 
+                                of consistency.</i>
+                        </div>
+                        
+                    </details>
+                        
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">15:05 h</td>
+                    <td class="paper">
+                    <details>
+                        <summary>
+                            <i>Managing Model Complexity: A Segment-Based Approach</i><br>
+                            Thomas Kühne and Pierre Maier
+                        </summary>
+
+                        <div class="abstract">
+                            <strong>Abstract:</strong>
+                            <i>Multi-level modeling (MLM) is typically characterized as minimizing 
+                                <i>accidental complexity</i>. We observe that MLM levels also aid in managing 
+                                <i>essential model complexity</i> by separating and organizing model content 
+                                based on the domain classification level it represents. Building on this insight, 
+                                we generalize the notion of a level&mdash;and previously recognized pluralities of 
+                                elements, e.g., those contained in packages&mdash;to that of a <i>model segment</i>. 
+                                In addition to solution-based segments, we recognize domain-induced segments, such 
+                                as <i>domain diversity</i> allowing semantic information to be represented in 
+                                models that was previously lost to mapping different modeler 
+                                intents to the same modeling constructs. These new, semantically relevant, model 
+                                segments support better model navigability and aid model understanding by facilitating 
+                                the isolation of particular model aspects. Crucially, all model segments are subject to 
+                                being represented by proxies, thus enabling a significant reduction of first-contact 
+                                model complexity. We posit that introducing segments for managing model complexity has 
+                                the potential to lower the threshold of MLM adoption due to its ability to counteract 
+                                the often-held perception of MLM models being complex.</i>
+                        </div>
+                        
+                    </details>
+                        
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">15:45 h</td>
+                    <td>Coffee Break</td>
+                </tr>
+                
+                <tr> 
+                    <td colspan="2">
+                        <h3>Session 4: Emerging Application Areas of Multi-Level Modeling<br>
+                        16:15 &ndash; 17:35 </h3>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                    Chair: TBD
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">16:15 h</td>
+                    <td class="paper">
+                    <details>
+                        <summary>
+                            <i>Deep Instantiation Meets Dependent Typing &ndash; The Potential of Coding Potency in Potent Type Systems</i><br>
+                            Friedrich Steimann and Ralf Lämmel
+                        </summary>
+
+                        <div class="abstract">
+                            <strong>Abstract:</strong>
+                            <i>Multi-level modelling (MLM) extends conventional modelling by 
+                                allowing classification hierarchies that span more than two levels, 
+                                enabling concepts such as deep instantiation and level-crossing relationships. 
+                                While several formal foundations for MLM have been proposed, the potential of 
+                                contemporary dependent type systems as a semantic basis has received comparatively 
+                                little attention. This paper therefore explores the idea of encoding multi-level 
+                                models in the type systems of languages such as Scala, Lean, or Haskell, which feature 
+                                dependent types, type families, and other advanced typing constructs. Although we 
+                                limit ourselves to a simple setup of deep instantiation here, our findings suggest 
+                                that this idea may indeed be valuable for exploring the design space of MLM languages.</i>
+                        </div>
+                        
+                    </details>
+                        
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">16:35 h</td>
+                    <td class="paper">
+                    <details>
+                        <summary>
+                            <i>Multi-Level Modeling for Interactive Scene Description and Content Creation</i><br>
+                            Gergely Gembela, Gergely Mezei and Ferenc Attila Somogyi
+                        </summary>
+
+                        <div class="abstract">
+                            <strong>Abstract:</strong>
+                            <i>Multi-level modeling (MLM) approaches and frameworks are reaching a stage where research 
+                                and development of both conceptual frameworks and tooling would greatly benefit from 
+                                feedback and experience from real-world use cases and industrial applications. 
+                                MLM-based solutions could address the ongoing challenge of maintaining flexibility, 
+                                full control, and semantic integrity throughout the development process of video games, 
+                                as players expect increasingly vast, unique, and highly detailed environments.<br><br>
+
+In this position paper, we propose the concept of a multi-level model-based framework: Multi-Layer Content Model (MLCM), 
+                                that utilizes MLM concepts to describe, store, and transport Digital Content 
+                                Creation (DCC) assets, serving as a universal interconnect between DCC tools, 
+                                game engines, and other DCC-related tools. MLCM also has potential to serve as a 
+                                data source for both traditional and AI-based Procedural Content Generation (PCG) 
+                                tools. Using MLCM, structural, behavioral, and generative descriptions are integrated 
+                                into a single model, supporting iterative development, modular extension, and 
+                                long-term maintainability. Beyond serving as a compact representation of generative 
+                                parameters and rules, MLCM facilitates verification of model elements and, potentially, 
+                                the resulting content, while also serving as a prime case study for the industrial 
+                                application of MLM.</i>
+                        </div>
+                        
+                    </details>
+                        
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">16:55 h</td>
+                    <td class="paper">
+                    <details>
+                        <summary>
+                            <i>Multi-Level Modeling Pressure in the FSL Ontology -- When OWL Punning Is Not Enough</i><br>
+                            Ralf Lämmel and Friedrich Steimann
+                        </summary>
+
+                        <div class="abstract">
+                            <strong>Abstract:</strong>
+                            <i>The &lsquo;Foundations of Software Languages&rsquo; (FSL) ontology 
+                                integrates software languages, tools, artifacts, concepts, 
+                                technological spaces, and engineering activities in standard OWL 2. 
+                                In developing FSL, we repeatedly encounter entities that must be 
+                                treated both as objects of discourse and as classifiers, for example 
+                                when modeling artifact kinds, language concepts, or megamodeling-like usage 
+                                relations. OWL 2 punning provides a pragmatic encoding for such dual roles, 
+                                but keeps the class-side and individual-side interpretations semantically separate. 
+                                This position paper uses FSL as a case study of where standard OWL 2 punning 
+                                is manageable, where it requires external validation discipline, and where it 
+                                exposes requirements for first-class multi-level modeling support.</i>
+                        </div>
+                        
+                    </details>
+                        
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">17:15 h</td>
+                    <td class="paper">
+                    <details>
+                        <summary>
+                            <i>Going beyond structure &ndash; Can Dynamic Multi-Level Algebra Support Multi-Level Simulation?</i><br>
+                            Sebastian Weber, Thomas Weber, Arne Lange, Jörg Henß and Robert Heinrich
+                        </summary>
+
+                        <div class="abstract">
+                            <strong>Abstract:</strong>
+                            <i>Multi-level simulation (MLS) combines simulation models that differ in abstraction, 
+                                resolution, timing, or computational cost. This makes MLS attractive for 
+                                complex systems, but it also creates recurring problems: simulation artefacts 
+                                must be selected, coupled, and exchanged without losing semantic compatibility. 
+                                At the same time, the word "level" has different meanings in MLS and in multi-level 
+                                modeling (MLM). Treating simulation resolution levels as ordinary MLM classification 
+                                levels therefore risks confusing refinement, instantiation, specialization, and 
+                                simulator coupling. This position paper examines Dynamic Multi-Level Algebra (DMLA) 
+                                as a modeling basis for MLS compatibility. We argue that DMLA should be investigated 
+                                not as a direct encoding of MLS levels, but as a level-blind, refinement-based 
+                                modeling formalism for explicitly representing simulation artefacts, simulator 
+                                capabilities, compatibility constraints, and validation operations. An ECU software 
+                                architecture example illustrates how DMLA-style validation can expose missing inputs, 
+                                semantic mismatches, and unjustified simulator switches. From selected MLS and 
+                                DMLA literature, we condense recurring challenges into six modeling needs and 
+                                identify where DMLA can address them and where further work is required.</i>
+                        </div>
+                        
+                    </details>
+                        
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">17:35 h</td>
+                    <td>Closing Day 1</td>
+                </tr>
+                
+                
+                <tr> <td colspan="2"><h5>Mon, Oct 5</h5></td> </tr>
+                <tr> 
+                    <td colspan="2">
+                        <h3>Session 5: Keynote<br>
+                        9:15 &ndash; 10:30 </h3>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                    Chair: Arne Lange
+                    </td>
+                </tr>
+                
+               <tr> 
+                    <td class="timeslot">9:15 h</td>
+                    <td class="paper">
+                    <details>
+                        <summary>
+                            <b>Keynote:</b> <i>Models That Must Live: Metamodeling Challenges in MBSE Tool Practice</i><br>
+                            Clemens Reichmann
+                        </summary>
+
+                        <div class="abstract">
+                            <strong>Abstract:</strong>
+                            <i>Industrial MBSE tools are subject to a permanent tension: simplicity versus expressiveness, short-term 
+                modelability versus long-term consistency. This keynote offers a practitioner's perspective on 
+                metamodel development, drawing on experience with PREEvision, a development environment for automotive 
+                E/E systems. It addresses questions that arise repeatedly in day-to-day tooling work: What drives the 
+                complexity of a metamodel? How can modeling layers be kept consistent when partial models are versioned 
+                and evolved independently? The keynote discusses where the classical two-level paradigm reaches its 
+                limits – and what impulses multi-level modeling can offer for industrial practice.</i>
+                        </div>
+                        
+                    </details>
+                        
+                    </td>
+                </tr>
+                
+                <tr> 
+                    <td class="timeslot">10:30 h</td>
+                    <td>Coffee Break</td>
+                </tr>
+                
+                <tr> 
+                    <td colspan="2">
+                        <h3>Session 6: MULTI Vector Industry Challenge<br>
+                        11:00 &ndash; 12:45 </h3>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                    Chair: Arne Lange
+                    </td>
+                </tr>
+                
+                
+            </table>
+            
+        
+            <h4>Keynote</h4>
+            <h5> <a href="https://de.linkedin.com/in/dr-clemens-reichmann-9aa703131" class="speaker">
+                Clemens Reichmann</a><br>
+                Models That Must Live: Metamodeling Challenges in MBSE Tool Practice</h5>
+        
+            
             <p>
-                tba </p>
+            Industrial MBSE tools are subject to a permanent tension: simplicity versus expressiveness, short-term 
+                modelability versus long-term consistency. This keynote offers a practitioner's perspective on 
+                metamodel development, drawing on experience with PREEvision, a development environment for automotive 
+                E/E systems. It addresses questions that arise repeatedly in day-to-day tooling work: What drives the 
+                complexity of a metamodel? How can modeling layers be kept consistent when partial models are versioned 
+                and evolved independently? The keynote discusses where the classical two-level paradigm reaches its 
+                limits – and what impulses multi-level modeling can offer for industrial practice.
+            </p>
+            
+            <table class="keynote">
+                <tr>
+                    <td>
+                    <div class="profile">
+                    
+                        <img src="img/clemens-reichmann.jpg" alt="Clemens Reichmann">
+            </div>
+                    </td>
+                    
+                    <td>
+                    <p>
+            Clemens Reichmann is Principal Research Advisor in the Predevelopment &amp; 
+                Innovation division at Vector Informatik GmbH in Karlsruhe, where he has worked for 20 years. 
+                Prior to joining Vector, he co-founded aquintos GmbH, a spin-off of the Karlsruhe Institute of 
+                Technology (KIT), which he grew as managing director to a team of up to 40 employees. At Vector, 
+                he spent over a decade as Technical Director and Head of Strategic Product Management, responsible 
+                for the development and product management of PREEvision, an industrial development environment for 
+                automotive E/E systems. Today he shapes the strategic evolution of MBSE methods and tool ecosystems 
+                and explores how AI can process, transform, and reason about engineering models. He has been a 
+                lecturer in Software Engineering at KIT since 2005 and is a member of the advisory board of the 
+                Vector Foundation.
+            </p>
+                    
+                    </td>
+                </tr>
+            </table>
+            
+        
         </div>
 
     </div>
