@@ -134,6 +134,10 @@ i i {
     text-align:justify;
 }
 
+.abstract li {
+    font-size: 12pt;
+}
+
 
 /* HERO */
 .hero-bg {
