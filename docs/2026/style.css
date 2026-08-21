@@ -373,6 +373,7 @@ footer {
     font-size: 20px;
 }
 
+
 .keynote * {
     vertical-align: top;
 }
@@ -394,6 +395,7 @@ footer {
 .keynote p {
     padding: 0 20px;
     font-size: 14px;
+    min-width: 400px;
 }
 
 .chair-info h3 {
@@ -405,8 +407,11 @@ footer {
     margin: 4px 0;
 }
 
+
+
 @media (max-width: 900px) {
 
+    
     /* .nav-content {
         flex-direction: column;
         align-items: flex-start;
@@ -536,6 +541,23 @@ footer {
         width: 110px;
         height: 130px;
         margin-bottom: 0;
+    }
+    
+        .keynote ,.keynote tr, .keynote td, .keynote tbody, .keynote p, .keynote table {
+        width:100%!important;
+        float:left;
+        clear:both;
+        display:block;
+        text-align:justify;
+    }
+    
+    .keynote .profile {
+        text-align: center;
+    }
+    
+    
+    .keynote p {
+        font-size: 14px;
     }
 
 }
