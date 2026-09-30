@@ -52,14 +52,14 @@
                 <tr> <td colspan="2"><h5>Sun, Oct 4 (Room: Torremolinos C)</h5></td> </tr>
                 <tr> 
                     <td colspan="2">
-                        <h3>Session 1: Foundations of Multi-Level Modeling<br>
+                        <h3>Session 1: Support for Creating and Managing Multi-Level Models<br>
                         9:15 &ndash; 10:30 </h3>
                     </td>
                 </tr>
                 
                 <tr>
                     <td colspan="2">
-                    Chair: Pierre Maier
+                    Chair: Arne Lange
                     </td>
                 </tr>
                 
@@ -70,37 +70,30 @@
                 <tr> 
                     <td class="timeslot">9:20</td>
                     <td class="paper">
-                    <details>
+                                        <details>
                         <summary>
-                            <i>Modeled Field Semantics: Making Field Behavior Explicit in Multi-Level Modeling</i><br>
-                            Gergely Mezei, Ferenc Attila Somogyi and Gergely Gembela
+                            <i>Managing Model Complexity: A Segment-Based Approach</i><br>
+                            Thomas Kühne and Pierre Maier
                         </summary>
 
                         <div class="abstract">
                             <strong>Abstract:</strong>
-                            <i>	Multi-level modeling provides established mechanisms for describing how fields 
-                                characterize elements across multiple abstraction steps. 
-                                Potency-based approaches are especially useful when the intended depth 
-                                of characterization is known and can be expressed directly in the modeling 
-                                language. This paper presents a different solution, referred to as Modeled 
-                                Field Semantics (MFS). Instead of defining field behavior only as a built-in 
-                                language mechanism, MFS represents certain aspects of field behavior explicitly 
-                                in the model.<br><br>
-
-The motivation for MFS comes from cases where field behavior is not limited to assigning a value at a predetermined 
-                                abstraction depth. A value may be interpreted differently by classifier-objects and 
-                                instance-objects, and the differences may also become part of the field structure 
-                                itself, for example when a general field later continues as several distinct fields 
-                                representing different roles. In MFS, such decisions are not treated only as 
-                                consequences of predefined field semantics, but can be expressed in the model 
-                                through explicit field relationships, assignment rules, and value access operations.
-                                <br><br>
-
-MFS treats selected aspects of field behavior as part of the modeled semantics. Field lineage, value-assignment rules, 
-                                getter and setter behavior, and their configuration can be represented explicitly 
-                                instead of being fully pre-encoded as one fixed language semantics. The result is a 
-                                way to describe field semantics in which structural behavior and value interpretation 
-                                remain explicit, adjustable, and subject to validation within the model.</i>
+                            <i>Multi-level modeling (MLM) is typically characterized as minimizing 
+                                <i>accidental complexity</i>. We observe that MLM levels also aid in managing 
+                                <i>essential model complexity</i> by separating and organizing model content 
+                                based on the domain classification level it represents. Building on this insight, 
+                                we generalize the notion of a level&mdash;and previously recognized pluralities of 
+                                elements, e.g., those contained in packages&mdash;to that of a <i>model segment</i>. 
+                                In addition to solution-based segments, we recognize domain-induced segments, such 
+                                as <i>domain diversity</i> allowing semantic information to be represented in 
+                                models that was previously lost to mapping different modeler 
+                                intents to the same modeling constructs. These new, semantically relevant, model 
+                                segments support better model navigability and aid model understanding by facilitating 
+                                the isolation of particular model aspects. Crucially, all model segments are subject to 
+                                being represented by proxies, thus enabling a significant reduction of first-contact 
+                                model complexity. We posit that introducing segments for managing model complexity has 
+                                the potential to lower the threshold of MLM adoption due to its ability to counteract 
+                                the often-held perception of MLM models being complex.</i>
                         </div>
                         
                     </details>
@@ -112,20 +105,31 @@ MFS treats selected aspects of field behavior as part of the modeled semantics. 
                     <td class="paper">
                     <details>
                         <summary>
-                            <i>Deep Reactions: Realizing and Evaluating Consistency Preservation for Multi-Level, Multi-View Models</i><br>
-                            Annika Kienle, Arne Lange, Thomas Weber, Lars König, Nathan Hagel and Erik Burger
+                            <i>Assessing Capabilities of Large Language Models for Multi-Level Modeling</i><br>
+                            Arianna Fedeli, Ludovico Iovino, Maria Teresa Rossi and Adrian Rutle
                         </summary>
 
                         <div class="abstract">
                             <strong>Abstract:</strong>
-                            <i>In view-based development, consistency plays a central role across concrete models.
-Consistency can be achieved automatically through consistency-preservation rules defined, for instance, in a change-driven language such as the Reactions language of the Vitruvius framework.
-This language, however, assumes the classical two-level architecture with a strict separation of type and instance level and can therefore only handle multi-level models through their generic linguistic structure.
-This forces domain questions to be encoded as not statically typed string operations on infrastructure metaclasses.
-Based on a previously published vision, this paper presents the Deep Reactions language.
-It lets a stable region of a deep model serve as an ontological metamodel, over which ontological types and features can be referenced directly and deep characterization through offspring-aware triggers can be exploited.
-Building on the stable code generation of the original Reactions language, a pre-processing step first transforms Dep Reactions into regular Reactions which ensures compatibility with existing implementations.
-Our evaluation shows that the number of referenced metamodels and the token count can be reduced while removing 83% of statically unvalidated type references.</i>
+                            <i>Large Language Models (LLMs) are increasingly being explored in Model-Driven 
+                                Engineering as assistants for generating, transforming, and evolving modeling 
+                                artifacts from natural language descriptions. Existing work, however, has mainly 
+                                focused on traditional two-level modeling settings, while the applicability of 
+                                LLMs to multilevel modeling remains largely unexplored. Multilevel modeling 
+                                introduces specific challenges, including reasoning across multiple abstraction 
+                                levels, handling deep instantiation, preserving cross-level consistency, and 
+                                distinguishing between types, instances, and linguistic classifications.<br><br>
+
+This paper investigates the capabilities and limitations of LLMs in supporting multilevel modeling tasks from 
+                                natural language descriptions. We propose a scenario-based evaluation framework 
+                                that combines two representative case studies from the MULTI challenge series with 
+                                a conventional two-level modeling benchmark. The framework evaluates LLMs across six 
+                                representative MLM tasks, covering hierarchy navigation, additive and subtractive 
+                                model evolution, structural modifications, instance generation, and complete 
+                                hierarchy synthesis. The results show that LLMs can support exploratory MLM tasks, 
+                                but their outputs remain candidate artifacts that require expert validation, 
+                                especially when correctness depends on cross-level reasoning and the preservation 
+                                of consistency.</i>
                         </div>
                         
                     </details>
@@ -268,7 +272,7 @@ language.</i>
                 
                  <tr> 
                     <td colspan="2">
-                        <h3>Session 3: Support for Creating and Managing Multi-Level Models<br>
+                        <h3>Session 3: Foundations of Multi-Level Modeling<br>
                         14:30 &ndash; 15:45 </h3>
                     </td>
                 </tr>
@@ -279,36 +283,27 @@ language.</i>
                     </td>
                 </tr>
                 
+        
+                
                 <tr> 
                     <td class="timeslot">14:30</td>
                     <td class="paper">
                     <details>
                         <summary>
-                            <i>Assessing Capabilities of Large Language Models for Multi-Level Modeling</i><br>
-                            Arianna Fedeli, Ludovico Iovino, Maria Teresa Rossi and Adrian Rutle
+                            <i>Deep Reactions: Realizing and Evaluating Consistency Preservation for Multi-Level, Multi-View Models</i><br>
+                            Annika Kienle, Arne Lange, Thomas Weber, Lars König, Nathan Hagel and Erik Burger
                         </summary>
 
                         <div class="abstract">
                             <strong>Abstract:</strong>
-                            <i>Large Language Models (LLMs) are increasingly being explored in Model-Driven 
-                                Engineering as assistants for generating, transforming, and evolving modeling 
-                                artifacts from natural language descriptions. Existing work, however, has mainly 
-                                focused on traditional two-level modeling settings, while the applicability of 
-                                LLMs to multilevel modeling remains largely unexplored. Multilevel modeling 
-                                introduces specific challenges, including reasoning across multiple abstraction 
-                                levels, handling deep instantiation, preserving cross-level consistency, and 
-                                distinguishing between types, instances, and linguistic classifications.<br><br>
-
-This paper investigates the capabilities and limitations of LLMs in supporting multilevel modeling tasks from 
-                                natural language descriptions. We propose a scenario-based evaluation framework 
-                                that combines two representative case studies from the MULTI challenge series with 
-                                a conventional two-level modeling benchmark. The framework evaluates LLMs across six 
-                                representative MLM tasks, covering hierarchy navigation, additive and subtractive 
-                                model evolution, structural modifications, instance generation, and complete 
-                                hierarchy synthesis. The results show that LLMs can support exploratory MLM tasks, 
-                                but their outputs remain candidate artifacts that require expert validation, 
-                                especially when correctness depends on cross-level reasoning and the preservation 
-                                of consistency.</i>
+                            <i>In view-based development, consistency plays a central role across concrete models.
+Consistency can be achieved automatically through consistency-preservation rules defined, for instance, in a change-driven language such as the Reactions language of the Vitruvius framework.
+This language, however, assumes the classical two-level architecture with a strict separation of type and instance level and can therefore only handle multi-level models through their generic linguistic structure.
+This forces domain questions to be encoded as not statically typed string operations on infrastructure metaclasses.
+Based on a previously published vision, this paper presents the Deep Reactions language.
+It lets a stable region of a deep model serve as an ontological metamodel, over which ontological types and features can be referenced directly and deep characterization through offspring-aware triggers can be exploited.
+Building on the stable code generation of the original Reactions language, a pre-processing step first transforms Dep Reactions into regular Reactions which ensures compatibility with existing implementations.
+Our evaluation shows that the number of referenced metamodels and the token count can be reduced while removing 83% of statically unvalidated type references.</i>
                         </div>
                         
                     </details>
@@ -321,31 +316,38 @@ This paper investigates the capabilities and limitations of LLMs in supporting m
                     <td class="paper">
                     <details>
                         <summary>
-                            <i>Managing Model Complexity: A Segment-Based Approach</i><br>
-                            Thomas Kühne and Pierre Maier
+                            <i>Modeled Field Semantics: Making Field Behavior Explicit in Multi-Level Modeling</i><br>
+                            Gergely Mezei, Ferenc Attila Somogyi and Gergely Gembela
                         </summary>
 
                         <div class="abstract">
                             <strong>Abstract:</strong>
-                            <i>Multi-level modeling (MLM) is typically characterized as minimizing 
-                                <i>accidental complexity</i>. We observe that MLM levels also aid in managing 
-                                <i>essential model complexity</i> by separating and organizing model content 
-                                based on the domain classification level it represents. Building on this insight, 
-                                we generalize the notion of a level&mdash;and previously recognized pluralities of 
-                                elements, e.g., those contained in packages&mdash;to that of a <i>model segment</i>. 
-                                In addition to solution-based segments, we recognize domain-induced segments, such 
-                                as <i>domain diversity</i> allowing semantic information to be represented in 
-                                models that was previously lost to mapping different modeler 
-                                intents to the same modeling constructs. These new, semantically relevant, model 
-                                segments support better model navigability and aid model understanding by facilitating 
-                                the isolation of particular model aspects. Crucially, all model segments are subject to 
-                                being represented by proxies, thus enabling a significant reduction of first-contact 
-                                model complexity. We posit that introducing segments for managing model complexity has 
-                                the potential to lower the threshold of MLM adoption due to its ability to counteract 
-                                the often-held perception of MLM models being complex.</i>
+                            <i>	Multi-level modeling provides established mechanisms for describing how fields 
+                                characterize elements across multiple abstraction steps. 
+                                Potency-based approaches are especially useful when the intended depth 
+                                of characterization is known and can be expressed directly in the modeling 
+                                language. This paper presents a different solution, referred to as Modeled 
+                                Field Semantics (MFS). Instead of defining field behavior only as a built-in 
+                                language mechanism, MFS represents certain aspects of field behavior explicitly 
+                                in the model.<br><br>
+
+The motivation for MFS comes from cases where field behavior is not limited to assigning a value at a predetermined 
+                                abstraction depth. A value may be interpreted differently by classifier-objects and 
+                                instance-objects, and the differences may also become part of the field structure 
+                                itself, for example when a general field later continues as several distinct fields 
+                                representing different roles. In MFS, such decisions are not treated only as 
+                                consequences of predefined field semantics, but can be expressed in the model 
+                                through explicit field relationships, assignment rules, and value access operations.
+                                <br><br>
+
+MFS treats selected aspects of field behavior as part of the modeled semantics. Field lineage, value-assignment rules, 
+                                getter and setter behavior, and their configuration can be represented explicitly 
+                                instead of being fully pre-encoded as one fixed language semantics. The result is a 
+                                way to describe field semantics in which structural behavior and value interpretation 
+                                remain explicit, adjustable, and subject to validation within the model.</i>
                         </div>
                         
-                    </details>
+                    </details>    
                         
                     </td>
                 </tr>
